@@ -1,8 +1,8 @@
 class ForemanSh < Formula
   desc "Run coding agents as one planner and many isolated executors on herdr"
   homepage "https://github.com/GenaroSalomone/foreman-sh"
-  url "https://github.com/GenaroSalomone/foreman-sh/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "f78c60edc9693816f18950ed1c58bba8cf297712d5674e17401d319a8be33190"
+  url "https://github.com/GenaroSalomone/foreman-sh/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "2ce172d7ca89a3d317271f3b641225788139b5aabd424a34ff910571c0310eb0"
   license "MIT"
 
   depends_on "fd"
@@ -29,8 +29,8 @@ class ForemanSh < Formula
       Install it, and the recommended engram and fzf, with:
         foreman-sh --with-recommended
 
-      After `brew upgrade foreman-sh`, run your install command again: the brain
-      keeps its own copy of the mechanism.
+      To upgrade, run `foreman-sh upgrade --brain ~/brain`: the brain keeps its own
+      copy of the mechanism, and this refreshes it with the flags you installed with.
     EOS
   end
 
