@@ -1,8 +1,8 @@
 class ForemanSh < Formula
   desc "Run coding agents as one planner and many isolated executors on herdr"
   homepage "https://github.com/GenaroSalomone/foreman-sh"
-  url "https://github.com/GenaroSalomone/foreman-sh/archive/refs/tags/v0.3.11.tar.gz"
-  sha256 "7ac859656676250c8e426c95732b877ed8dba16001d92399c39ed8e486ecd4cc"
+  url "https://github.com/GenaroSalomone/foreman-sh/archive/refs/tags/v0.3.12.tar.gz"
+  sha256 "f7c9dbb501594075babbaddc32d60d5f0e2be4f2ad6625d1e0f26eb9565ec209"
   license "MIT"
 
   depends_on "fd"
