@@ -1,11 +1,13 @@
 class ForemanSh < Formula
   desc "Run coding agents as one planner and many isolated executors on herdr"
   homepage "https://github.com/GenaroSalomone/foreman-sh"
-  url "https://github.com/GenaroSalomone/foreman-sh/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "2bc2674b83ebfcc81c4bf776ecebcc6cc7a41d760014e36a573524b6fba8adbd"
+  url "https://github.com/GenaroSalomone/foreman-sh/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "bcaac296edbd924d4e4ed195c1903c80aa34f20e2e4820f8d263b221e121271f"
   license "MIT"
 
   depends_on "fd"
+  # go is a runtime dependency, not :build: foreman-sh builds hw-core when it installs a brain, long after `brew install`
+  depends_on "go"
   depends_on "herdr"
   depends_on "jq"
   depends_on "ripgrep"
