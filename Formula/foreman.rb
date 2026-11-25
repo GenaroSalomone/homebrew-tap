@@ -1,8 +1,8 @@
 class Foreman < Formula
   desc "Run coding agents as one planner and many isolated executors on herdr"
   homepage "https://github.com/GenaroSalomone/foreman"
-  url "https://github.com/GenaroSalomone/foreman/archive/refs/tags/v1.3.0-rc.1.tar.gz"
-  sha256 "e1675781cdb67a6841874d5618af15baff72ae3d5929ebdb9683b6228e8ccc2a"
+  url "https://github.com/GenaroSalomone/foreman/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "fd8ec838843bd2fcddf4d57a87fba0b4a5e84db9e54ce7c3ed5ea5b6c690a1a1"
   license "MIT"
 
   depends_on "herdr"
@@ -13,28 +13,28 @@ class Foreman < Formula
   on_macos do
     on_arm do
       resource "hw-core" do
-        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0-rc.1/hw-core-darwin-arm64.tar.gz"
-        sha256 "54305c43422d16ed4ee3668efb8a16fdbb7045ee609af7bc85bbc6825b03b3f2"
+        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0/hw-core-darwin-arm64.tar.gz"
+        sha256 "e8b81d7c1d8e922326f772a6f9f153dde909f8a25b18c711905d9d9614fc5c7c"
       end
     end
     on_intel do
       resource "hw-core" do
-        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0-rc.1/hw-core-darwin-amd64.tar.gz"
-        sha256 "2d03329317aea6d6b2cde918a35a82f37e9f551b23f8be82404203afc374dd4f"
+        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0/hw-core-darwin-amd64.tar.gz"
+        sha256 "7fb4a4c2d44cc27aae396e9208b0e8563a71ea93db22fb11e536b054761df8a2"
       end
     end
   end
   on_linux do
     on_arm do
       resource "hw-core" do
-        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0-rc.1/hw-core-linux-arm64.tar.gz"
-        sha256 "cb3a4d7577d1a786847769fe691864fd18ef7bf042ab200fe956814b38118406"
+        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0/hw-core-linux-arm64.tar.gz"
+        sha256 "1fce1152ab683c1974012040f888f118a1b585e2778f048881ac24c6415b66b3"
       end
     end
     on_intel do
       resource "hw-core" do
-        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0-rc.1/hw-core-linux-amd64.tar.gz"
-        sha256 "d1db127e909d66e5f8668b271cd4f5a850e8a320280a52b6bb569023df4fef47"
+        url "https://github.com/GenaroSalomone/foreman/releases/download/v1.3.0/hw-core-linux-amd64.tar.gz"
+        sha256 "4899db5d11e200ec5b779a67dd7eb7c0f58d84c50951e2676cbf74cb9633bc8e"
       end
     end
   end
